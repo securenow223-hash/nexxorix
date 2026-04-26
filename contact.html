@@ -1,28 +1,189 @@
-<form action="https://formsubmit.co/mydigitalmantra2020@gmail.com" method="POST" class="contact-form">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Nexxorix</title>
 
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_subject" value="New Nexxorix Website Lead">
-  <input type="hidden" name="_template" value="table">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <input type="text" name="name" placeholder="Your Name" required>
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+  color:#fff;
+}
 
-  <input type="email" name="email" placeholder="Your Email" required>
+/* Section Layout */
+.contact-section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  padding:40px;
+  gap:40px;
+  flex-wrap:wrap;
+}
 
-  <input type="text" name="phone" placeholder="Phone Number">
+/* Left Content */
+.info-box{
+  max-width:400px;
+}
+.info-box h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+.info-box p{
+  opacity:0.8;
+  line-height:1.6;
+}
+.badges{
+  margin-top:20px;
+}
+.badges span{
+  display:inline-block;
+  background:#ffffff15;
+  padding:8px 12px;
+  margin:5px;
+  border-radius:20px;
+  font-size:12px;
+}
 
-  <input type="text" name="company" placeholder="Company Name">
+/* Form Box */
+.form-box{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:30px;
+  border-radius:20px;
+  width:350px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
 
-  <select name="service">
-    <option value="">Select Service</option>
-    <option>SEO</option>
-    <option>PPC</option>
-    <option>Website Designing</option>
-    <option>SMO</option>
-    <option>Full Marketing Package</option>
-  </select>
+.form-box h2{
+  margin-bottom:20px;
+  text-align:center;
+}
 
-  <textarea name="message" placeholder="Your Message"></textarea>
+/* Inputs */
+input, select, textarea{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border:none;
+  border-radius:10px;
+  background:#ffffff10;
+  color:#fff;
+  outline:none;
+}
 
-  <button type="submit">Send Inquiry</button>
+input::placeholder, textarea::placeholder{
+  color:#ccc;
+}
 
-</form>
+/* Button */
+button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(45deg,#ff4d4d,#6a5acd);
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+/* Icons */
+.input-icon{
+  position:relative;
+}
+.input-icon i{
+  position:absolute;
+  left:12px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#aaa;
+}
+.input-icon input{
+  padding-left:35px;
+}
+</style>
+</head>
+
+<body>
+
+<section class="contact-section">
+
+  <!-- LEFT CONTENT -->
+  <div class="info-box">
+    <h1>Grow Your Business with Nexxorix 🚀</h1>
+    <p>
+      We help brands scale with powerful digital marketing strategies including SEO, PPC, SMO, and full-stack website solutions.
+    </p>
+
+    <div class="badges">
+      <span>🔥 SEO Experts</span>
+      <span>⚡ Fast Growth</span>
+      <span>📈 Lead Generation</span>
+      <span>💻 Website Design</span>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <div class="form-box">
+
+    <h2>Get Free Consultation</h2>
+
+    <form action="https://formsubmit.co/mydigitalmantra2020@gmail.com" method="POST">
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Nexxorix Website Lead">
+      <input type="hidden" name="_template" value="table">
+
+      <div class="input-icon">
+        <i class="fa fa-user"></i>
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="input-icon">
+        <i class="fa fa-envelope"></i>
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="input-icon">
+        <i class="fa fa-phone"></i>
+        <input type="text" name="phone" placeholder="Phone Number">
+      </div>
+
+      <div class="input-icon">
+        <i class="fa fa-building"></i>
+        <input type="text" name="company" placeholder="Company Name">
+      </div>
+
+      <select name="service">
+        <option value="">Select Service</option>
+        <option>SEO</option>
+        <option>PPC</option>
+        <option>Website Designing</option>
+        <option>SMO</option>
+        <option>Full Marketing Package</option>
+      </select>
+
+      <textarea name="message" rows="4" placeholder="Tell us about your project"></textarea>
+
+      <button type="submit">🚀 Send Inquiry</button>
+
+    </form>
+  </div>
+
+</section>
+
+</body>
+</html>
